@@ -26,7 +26,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       actions: read
-      contents: read
+      contents: write
       security-events: write
 
     strategy:
@@ -44,6 +44,7 @@ jobs:
 
     - name: Maven Dependency Tree Dependency Submission
       uses: advanced-security/maven-dependency-submission-action@v3.0.0
+
 
 
     # Initializes the CodeQL tools for scanning.
